@@ -1,7 +1,9 @@
+import photoPlaceholder from "../../assets/images/speakers/photo_placeholder.png";
+
 function SpeakerCard({
     name = "nameeeee surnameeeee",
     company = "company name",
-    photoUrl = "/speakers/photo_placeholder.png"
+    photoUrl = photoPlaceholder
 }) {
     return (
         <div className="flex-shrink-0 relative mx-3 h-full">

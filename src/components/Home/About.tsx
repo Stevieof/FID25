@@ -1,22 +1,42 @@
 import ArrowsBG from "../common/svg/ArrowsBG";
-import Masonry from '../common/Masonry';
+import Masonry from "../common/Masonry";
 import Sponsors from "./Sponsors";
+import monitor from "../../assets/images/monitor.webp";
+import image1  from "../../assets/images/image1.webp";
+import image2  from "../../assets/images/image2.webp";
+import image3  from "../../assets/images/image3.webp";
+import image4  from "../../assets/images/image4.webp";
+import image5  from "../../assets/images/image5.webp";
+import image6  from "../../assets/images/image6.webp";
 
 function About() {
     return (
         <>
-            <section id="about" className="relative flex flex-col justify-center items-center py-6 overflow-hidden">
+            <section
+                id="about"
+                className="relative flex flex-col justify-center items-center py-6 overflow-hidden"
+            >
                 <div>
                     <ArrowsBG className="absolute right-0 opacity-30 -z-100 scale-65 sm:scale-85 md:scale-100 lg:scale-125" />
                     <div className="flex items-center justify-around">
-                        <img src="/images/monitor.webp" alt="Franko IT Day Logo" className="w-45 h-45 sm:w-65 sm:h-65 md:w-80 md:h-80 ml-4" />
+                        <img
+                            src={monitor}
+                            alt="Franko IT Day Logo"
+                            className="w-45 h-45 sm:w-65 sm:h-65 md:w-80 md:h-80 ml-4"
+                        />
                         <div className="flex flex-col mx-4 sm:ml-8 lg:ml-16">
-                            <p className="text-xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-4 mb-1 font-extrabold italic text-yellow-500">About Franko IT Day</p>
-                            <p className="max-w-90 text-md sm:text-xl md:text-2xl md:max-w-140 md:nb-2 font-medium text-yellow-500">Since 2018, the conference has been an annual event, successfully adapting to a
-                                rapidly changing environment and challenges. Franko IT Day is always ready to
-                                surprise you with inspiring lectures and informative workshops both online and in
-                                person!</p>
-                            <p className="text-sm sm:text:lg md:text-xl text-yellow-600">November 4, 50 Drahomanova St., Lviv</p>
+                            <p className="text-xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-4 mb-1 font-extrabold italic text-yellow-500">
+                                About Franko IT Day
+                            </p>
+                            <p className="max-w-90 text-md sm:text-xl md:text-2xl md:max-w-140 md:nb-2 font-medium text-yellow-500">
+                                Since 2018, the conference has been an annual event, successfully
+                                adapting to a rapidly changing environment and challenges. Franko
+                                IT Day is always ready to surprise you with inspiring lectures and
+                                informative workshops both online and in person!
+                            </p>
+                            <p className="text-sm sm:text:lg md:text-xl text-yellow-600">
+                                November 4, 50 Drahomanova St., Lviv
+                            </p>
                         </div>
                     </div>
 
@@ -24,23 +44,24 @@ function About() {
 
                     <div className="flex flex-col sm:flex-row items-center sm:items-start">
                         <p className="px-6 top-0 mb-4 sm:max-w-70 text-lg md:mr-10 md:max-w-120 md:text-2xl lg:mr-25">
-                            Since the very beginning, the conference’s motto was "for students, by students". Our
-                            speakers never fail to impress the guests with high-quality knowledge sharing in the
-                            form of interactive lectures and workshops about the latest trends in the IT industry.<br /> <br />
-
-                            Plus, Franko IT Day loves to encourage the younger generation to learn new things and
-                            develop their skills using exciting giveaways and cool presents. Come and impress us
-                            with your attentive engagement or exceptional luck - maybe you'll be the next one to
+                            Since the very beginning, the conference’s motto was "for students,
+                            by students". Our speakers never fail to impress the guests with
+                            high-quality knowledge sharing in the form of interactive lectures
+                            and workshops about the latest trends in the IT industry.<br /> <br />
+                            Plus, Franko IT Day loves to encourage the younger generation to
+                            learn new things and develop their skills using exciting giveaways
+                            and cool presents. Come and impress us with your attentive
+                            engagement or exceptional luck - maybe you'll be the next one to
                             take all that merch home!
                         </p>
                         <div className="relative">
-                            <Masonry breakPoints={[1, 340]} >
-                                <img src="/images/image1.webp" className="w-55 h-auto m-1"></img>
-                                <img src="/images/image2.webp" className="w-55 h-auto m-1"></img>
-                                <img src="/images/image3.webp" className="w-55 h-auto m-1"></img>
-                                <img src="/images/image4.webp" className="w-55 h-auto m-1"></img>
-                                <img src="/images/image5.webp" className="w-55 h-auto m-1"></img>
-                                <img src="/images/image6.webp" className="w-55 h-auto m-1"></img>
+                            <Masonry breakPoints={[1, 340]}>
+                                <img src={image1} className="w-55 h-auto m-1" alt="img1" />
+                                <img src={image2} className="w-55 h-auto m-1" alt="img2" />
+                                <img src={image3} className="w-55 h-auto m-1" alt="img3" />
+                                <img src={image4} className="w-55 h-auto m-1" alt="img4" />
+                                <img src={image5} className="w-55 h-auto m-1" alt="img5" />
+                                <img src={image6} className="w-55 h-auto m-1" alt="img6" />
                             </Masonry>
                         </div>
                     </div>
@@ -55,7 +76,10 @@ function About() {
                         IT companies<br />
                     </p>
                     <p className="text-center max-w-100 mr-2 ml-0 sm:max-w-70 sm:ml-5 sm:text-right md:text-2xl md:mr-6 md:ml-5 md:max-w-100 lg:text-3xl">
-                        Franko IT Day is the most prominent IT conference of the Ivan Franko National  University of Lviv. It is held annually on the faculty of electronics and computer  technologies to help bring ambitious students and their future employers together.
+                        Franko IT Day is the most prominent IT conference of the Ivan Franko
+                        National University of Lviv. It is held annually on the faculty of
+                        electronics and computer technologies to help bring ambitious students
+                        and their future employers together.
                     </p>
                 </div>
                 <div>

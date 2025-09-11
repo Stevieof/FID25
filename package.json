@@ -2,15 +2,16 @@
   "name": "fid25",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://LNU-FECT-Student-Government.github.io/FrankoITday/",
+  "homepage": "https://stevieof.github.io/FID25/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
     "@nirajbagdi/react-masonry": "^1.0.4",

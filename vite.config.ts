@@ -9,5 +9,6 @@ export default defineConfig({
     host: true,
     allowedHosts: ['1fed83a30185.ngrok-free.app'],
   },
-  base: '/', //this is base url for gh-pages deployment, also change package.json "homepage" field
+    base: '/FID25/',
+
 });
