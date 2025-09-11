@@ -2,6 +2,7 @@ import InstagramIcon from "./svg/InstagramIcon";
 import TelegramIcon from "./svg/TelegramIcon";
 import TikTokIcon from "./svg/TikTokIcon";
 
+
 function Footer() {
     return (
         <footer>
